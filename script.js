@@ -33,8 +33,6 @@ function budgetCalculator(watchQty, mobileQty, laptopQty) {
     }
 }
 
-var result = budgetCalculator(0,0,0);
-console.log(result);
 
 
 // Hotel Cost
@@ -72,6 +70,22 @@ function hotelCost(day){
     else{
         return totalCost;
     }
+}
+
+
+// Mega Freind
+
+function megaFriend(arr){
+    var lgth = 0;
+    var longest;
+    
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].length > lgth) {
+        var lgth = arr[i].length;
+        longest = arr[i];
+      }
+    }
+    return longest;
 }
 
 
